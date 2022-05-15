@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox"/>
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="logo">
+                <h1>Bryan Andre</h1>
+              </div>
+              <div class="menu-items">
+                <ul>
+                  <!--Les fichier HTML de chaque exo est nommé tels quel-->
+                <li><a href="./index.html">Menu principal</a></li>
+                <li><a href="./Iframe.html">Iframe</a></li>
+                <li><a href="./Menu2.html">Menu Déroulant avec JS</a></li>
+                <li><a href="./formulaire.html">Formulaire</a></li>
+                <li><a href="./Video.html">Video</a></li>
+                <li><a href="./Blocks.html">Position d'un block</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+</header>
+<div class="container">
+<article>
+    <div class="col">
+        <p class="q">Voici ici un formulaire</p>
+
+<aside>
+    <p> <strong>les champs du formulaire sont de type <span>focus</span> </strong> </p>
+</aside>
+
+<p> <em> Un span dans la partie aside est sur hover</em></p>
+
+    </div>
+</article>
+<!--Formulaire-->
+<div class="col">
+<form action="#">
+
+      <h2>Formulaire responsif</h2>
+    <div>
+      <label class="desc" id="title1" for="Field1">votre Nom</label>
+      <div>
+        <input id="Field1" name="Field1" type="text" class="field text fn" placeholder="nom" size="8" tabindex="1">
+      </div>
+    </div>
+      
+    <div>
+      <label class="desc" id="title3" for="Field3">
+        votre Email
+      </label>
+      <div>
+        <input id="Field3" name="Field3" type="email" spellcheck="false" placeholder="mail" maxlength="255" tabindex="3"> 
+     </div>
+    </div>
+      
+    <div>
+      <label class="desc" id="title4" for="Field4">
+        Message
+      </label>
+    
+      <div>
+        <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4" placeholder="Votre message"></textarea>
+      </div>
+    </div>
+      
+    <div>
+      <fieldset>
+      
+        <legend id="title5" class="desc">
+          quel est votre animal préféré
+        </legend>
+        
+        <div>
+            <input id="radioDefault_5" name="Field5" type="hidden">
+            <div>
+                <input id="Field5_0" name="Field5" type="radio" value="Chat" tabindex="5" checked="checked">
+                <label class="choice" for="Field5_0">Chat</label>
+            </div>
+          <div>
+              <input id="Field5_1" name="Field5" type="radio" value="Chien" tabindex="6">
+              <label class="choice" for="Field5_1">Chien</label>
+          </div>
+          <div>
+              <input id="Field5_2" name="Field5" type="radio" value="Raton laveur" tabindex="7">
+              <label class="choice" for="Field5_2">Raton laveur</label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    
+    <div>
+      <fieldset>
+        <legend id="title6" class="desc">
+          Avez-vous faim
+        </legend>
+    
+        <div>
+            <input id="Field6" name="Field6" type="checkbox" value="Oui" tabindex="8">
+            <label class="choice" for="Field6">Oui</label>
+        </div>
+        <div>
+            <input id="Field7" name="Field7" type="checkbox" value="non" tabindex="9">
+            <label class="choice" for="Field7">non</label>
+        </div>
+        <div>
+            <input id="Field8" name="Field8" type="checkbox" value="Je ne sais pas" tabindex="10">
+            <label class="choice" for="Field8">Je ne sais pas</label>
+        </div>
+      </fieldset>
+    </div>
+    
+    <div>
+      <label class="desc" id="title106" for="Field106">
+         Faite un choix
+      </label>
+      <div>
+      <select id="Field106" name="Field106" class="field select medium" tabindex="11"> 
+        <option value="First Choice">Choix 1</option>
+        <option value="Second Choice">Choix 2</option>
+        <option value="Third Choice">Choix 3</option>
+      </select>
+      </div>
+    </div>
+    
+    <div>
+          <div>
+            <input id="saveForm" name="saveForm" type="submit" value="Submit">
+      </div>
+      </div>
+    
+  </form>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+</html>

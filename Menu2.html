@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgba(52, 50, 50, 0.432);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .logo{
+            width: 5%;
+        }
+        .logo img{
+            width: 100%;
+        }
+        .menu-ctn > li{
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: white;
+            transition: all 0.8s ease;
+            position: relative;
+        }
+        .menu-ctn li:hover{
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+        ul{
+            list-style: none;
+    
+        }
+        #dropdown{
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: aliceblue;
+            z-index: 1;
+            text-align: center;
+            left: 0;
+            top: 100%;
+        }
+        #dropdown li {
+            padding: 10px 15px ;
+        }
+        #dropdown.active {
+            display: block;
+        }
+    
+    </style>
+</head>
+<!--Feille de sty<le interne pour la navbar avec JS-->
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./public/images/Coffee-Logo-Transparent-Background.png" alt="">
+            </div>
+            <ul class="menu-ctn">
+                <li><a href="./index.html">Retour page principale</a></li>
+                <li id="menu">Menu déroulant avec JS
+                    <ul id="dropdown">
+                        <li><a href="./index.html">Page Index</a></li>
+                        <li><a href="./formulaire.html">formulaire</a></li>
+                        <li><a href="./Blocks.html">blocks</a></li>
+                        <li><a href="./Iframe.html">iframe</a></li>
+                        <li><a href="./Pseudoformat.html">pseudo format</a></li>
+                        <li><a href="./Video.html">video</a></li>
+                    </ul>
+                </li>
+                <li>Inutile</li>
+                <li>Inutile</li>
+            </ul>
+        </nav>
+    </header>
+    <script src="./src/nav.js"></script> <!--Script Pour la navbar avec JS-->
+</body>
+</html>
